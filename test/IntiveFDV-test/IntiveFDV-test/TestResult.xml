@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="1" result="Failed" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.8.0.0" clr-version="4.0.30319.42000" start-time="2018-03-19 17:58:56Z" end-time="2018-03-19 17:58:57Z" duration="0.940531">
+  <command-line><![CDATA[nunit3-console.exe  IntiveFDV-test.csproj]]></command-line>
+  <test-suite type="Assembly" id="1-1002" name="IntiveFDV-test.dll" fullname="C:\Users\fochoa\Desktop\test\IntiveFDV-test\IntiveFDV-test\bin\Debug\IntiveFDV-test.dll" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2018-03-19 17:58:57Z" end-time="2018-03-19 17:58:57Z" duration="0.057022" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+    <environment framework-version="3.10.1.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.16299.0" platform="Win32NT" cwd="C:\Users\fochoa\Desktop\test\IntiveFDV-test\IntiveFDV-test" machine-name="FOCHOA" user="fochoa" user-domain="FOCHOA" culture="es-AR" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="BasePath" value="C:\Users\fochoa\Desktop\test\IntiveFDV-test\IntiveFDV-test\bin\Debug\" />
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\fochoa\Desktop\test\IntiveFDV-test\IntiveFDV-test" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.5.2" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="_PID" value="14072" />
+      <property name="_APPDOMAIN" value="domain-fca2808b-IntiveFDV-test.csproj" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="1-1003" name="IntiveFDV_test" fullname="IntiveFDV_test" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2018-03-19 17:58:57Z" end-time="2018-03-19 17:58:57Z" duration="0.039251" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="1-1000" name="InterviewTest" fullname="IntiveFDV_test.InterviewTest" classname="IntiveFDV_test.InterviewTest" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2018-03-19 17:58:57Z" end-time="2018-03-19 17:58:57Z" duration="0.034447" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1-1001" name="interviewTest" fullname="IntiveFDV_test.InterviewTest.interviewTest" methodname="interviewTest" classname="IntiveFDV_test.InterviewTest" runstate="Runnable" seed="1771930083" result="Failed" label="Error" start-time="2018-03-19 17:58:57Z" end-time="2018-03-19 17:58:57Z" duration="0.023770" asserts="0">
+          <failure>
+            <message><![CDATA[System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+            <stack-trace><![CDATA[   at IntiveFDV_test.src.main.test.pageObject.Google..ctor(IWebDriver driver) in C:\Users\fochoa\Desktop\test\IntiveFDV-test\IntiveFDV-test\src\main\test\pageObject\Google.cs:line 22
+   at IntiveFDV_test.InterviewTest.interviewTest() in C:\Users\fochoa\Desktop\test\IntiveFDV-test\IntiveFDV-test\src\test\test\interviewTest.cs:line 33]]></stack-trace>
+          </failure>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

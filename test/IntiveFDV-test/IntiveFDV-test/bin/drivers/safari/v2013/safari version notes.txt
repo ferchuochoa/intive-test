@@ -1,0 +1,21 @@
+-----------------------------------------------
+-- SAFARI DRIVER Change Log for myGWN project--
+-----------------------------------------------
+
+Change Log: - not available for the moment -
+WebSite: http://ios-driver.github.io/ios-driver/index.html
+Download Page: http://ios-driver.github.io/ios-driver/safari.html
+
+Important Note: Safari Driver IS NOT supported by seleniumhq team, but by another special team for ios drivers.
+
+-----------------------------------------------
+			Driver Information
+-----------------------------------------------
+Current Driver executables: "IEDriverServer_x86.exe" for Win32 and "IEDriverServer_amd64.exe" for Win64.
+Location: The /src/test/resources/drivers/IE folder in the current project.
+
+-----------------------------------------------
+				Change Log
+-----------------------------------------------
+
+--------SafariDriver v???? (2013-11-20)---------

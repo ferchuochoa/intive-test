@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.8.0.0" clr-version="4.0.30319.42000" start-time="2018-03-19 23:41:33Z" end-time="2018-03-19 23:41:50Z" duration="16.769338">
+  <command-line><![CDATA[nunit3-console.exe  --params:Browser=FireFox IntiveFDV-test.dll]]></command-line>
+  <test-suite type="Assembly" id="0-1002" name="IntiveFDV-test.dll" fullname="C:\Users\ferchu\intive-test\test\IntiveFDV-test\IntiveFDV-test\bin\Debug\IntiveFDV-test.dll" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-03-19 23:41:34Z" end-time="2018-03-19 23:41:49Z" duration="15.139760" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+    <environment framework-version="3.10.1.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.1.7601.65536" platform="Win32NT" cwd="C:\Users\ferchu\intive-test\test\IntiveFDV-test\IntiveFDV-test\bin\Debug" machine-name="FERCHU-PC" user="ferchu" user-domain="ferchu-PC" culture="es-ES" uiculture="es-ES" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\ferchu\intive-test\test\IntiveFDV-test\IntiveFDV-test\bin\Debug" />
+      <setting name="TestParametersDictionary" value="[Browser, FireFox]">
+        <item key="Browser" value="FireFox" />
+      </setting>
+      <setting name="TestParameters" value="Browser=FireFox" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.5.2" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="_PID" value="7656" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <test-suite type="TestSuite" id="0-1003" name="IntiveFDV_test" fullname="IntiveFDV_test" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-03-19 23:41:34Z" end-time="2018-03-19 23:41:49Z" duration="15.081068" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestFixture" id="0-1000" name="InterviewTest" fullname="IntiveFDV_test.InterviewTest" classname="IntiveFDV_test.InterviewTest" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-03-19 23:41:34Z" end-time="2018-03-19 23:41:49Z" duration="15.068592" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <test-case id="0-1001" name="interviewTest" fullname="IntiveFDV_test.InterviewTest.interviewTest" methodname="interviewTest" classname="IntiveFDV_test.InterviewTest" runstate="Runnable" seed="440105672" result="Passed" start-time="2018-03-19 23:41:34Z" end-time="2018-03-19 23:41:49Z" duration="15.021368" asserts="0">
+          <properties>
+            <property name="Category" value="interviewTest" />
+          </properties>
+          <output><![CDATA[C:\Users\ferchu\intive-test\test\IntiveFDV-test\IntiveFDV-test\bin\drivers\firefox\v0.19.0\amd64
+the browser selected is: FireFox
+InterviewTest: Starting the Interview test case... 
+Google: Creating a instance
+Google: Starting to Search the value: Seleniumhq.
+An error occurred: 'OpenQA.Selenium.NoSuchElementException: Unable to locate element: #lst\-ib
+   en OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   en OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   en OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   en IntiveFDV_test.src.main.test.pageObject.Google.search(String toSearch) en C:\Users\ferchu\intive-test\test\IntiveFDV-test\IntiveFDV-test\src\main\test\pageObject\Google.cs:línea 30'
+Google: Clicking on the firts result with the value: Seleniumhq.
+An error occurred: 'OpenQA.Selenium.NoSuchElementException: Unable to locate element: //div//h3//a[contains(@href,'seleniumhq')]
+   en OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   en OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   en OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   en IntiveFDV_test.src.main.test.pageObject.Google.clickOnFirstContain(String value) en C:\Users\ferchu\intive-test\test\IntiveFDV-test\IntiveFDV-test\src\main\test\pageObject\Google.cs:línea 45'
+InterviewTest: The test case was finished successfully.
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

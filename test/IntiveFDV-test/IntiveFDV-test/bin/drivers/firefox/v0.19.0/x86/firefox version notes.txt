@@ -1,0 +1,68 @@
+0.19.0 (2017-09-16)
+
+Note that with geckodriver v0.19.0 the following versions are recommended:
+
+Firefox 55.0 (and greater)
+Selenium 3.5 (and greater)
+
+Added
+	- Added endpoint:
+		- POST /session/{session id}/window/minimize for the Minimize Window command
+
+	- Added preference extensions.shield-recipe-client.api_url to disable shield studies which could unexpectedly change the behavior of Firefox
+
+	- Introduced the temporary, boolean capability moz:webdriverClick to enable the WebDriver conforming behavior of the Element Click command.
+
+	- Added crashreporter environment variables to better control the browser in case of crashes
+
+	- Added preference dom.file.createInChild set to true to allow file object creation in content processes
+
+Changed
+	- Log all used application arguments and not only -marionette
+
+	- Early abort connection attempts to Marionette if the Firefox process closed unexpectedly
+
+	- Removed deprecated socksProxyVersion in favor of socksVersion
+
+	- Removed ftpProxyPort, httpProxyPort, sslProxyPort, and socksProxyPort because ports have to be set for ftpProxy, httpProxy, sslProxy, and socksProxy using ":"
+
+	- The proxyType noproxy has been replaced with direct in accordance with recent WebDriver specification changes
+
+	- The WindowRectParameters have been updated to return signed 32-bit integers in accordance with the CSS and WebDriver specifications, and to be more liberal with the input types
+
+	- Mapped the FullscreenWindow to the correct Marionette command
+
+	- To make sure no browser process is left behind when the NewSession fails, the process is closed immediately now
+
+	- /moz/addon/install command accepts an addon parameter, in lieu of path, containing an addon as a Base64 string (fixed by Jason Juang)
+
+	- webdriver crate upgraded to version 0.31.0
+
+	- mozrunner crate upgraded to version 0.5.0
+
+Removed
+	- Removed the following obsolete preferences for Firefox:
+		- browser.safebrowsing.enabled
+		- browser.safebrowsing.forbiddenURIs.enabled
+		- marionette.defaultPrefs.port
+		- marionette.logging
+
+======================================================================
+
+0.11.1 (2016-10-10)
+
+Fixed
+	- Version number in binary now reflects the release version.
+
+0.11.0 (2016-10-10)
+
+Added
+
+	-Introduced continous integration builds for Linux- and Windows 32-bit binaries
+	-Added commands for setting- and getting the window position
+	-Added new extension commands for finding an element’s anonymous children and querying its attributes; accessible through the /session/{sessionId}/moz/xbl/{elementId}/anonymous_children to return all anonymous children and /session/{sessionId}/moz/xbl/{elementId}/anonymous_by_attribute to return an anonymous element by a name and attribute query
+	-Introduced a moz:firefoxOptions capability to customise a Firefox session:
+	-The binary, args, and profile entries on this dictionary is equivalent to the old firefox_binary, firefox_args, and firefox_profile capabilities, which have now all been removed
+	-The log capability takes a dictionary such as {log: "trace"} to enable trace level verbosity in Gecko
+	-The prefs capability lets you define Firefox preferences through capabilities
+	-Re-introduced the --webdriver-port argument as a hidden alias to --port
