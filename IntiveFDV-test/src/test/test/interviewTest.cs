@@ -35,7 +35,7 @@ namespace IntiveFDV_test
         {
             Console.WriteLine("InterviewTest: Starting the Interview test case... ");
             Google google = new Google(driver);
-            google.searchAndEnter("Seleniumhq", browserName);
+            google.searchAndEnter("Seleniumhq");
             google.clickOnFirstContain("Seleniumhq");
 
             Console.WriteLine("InterviewTest: The test case was finished successfully.");

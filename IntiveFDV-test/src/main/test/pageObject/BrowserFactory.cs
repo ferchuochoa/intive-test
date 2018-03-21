@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
 using System;
 using System.Configuration;
@@ -18,22 +17,6 @@ namespace IntiveFDV_test.src.main.test.pageObject
 
             switch (browserName)
                 {
-                    case "FireFox":
-                        try
-                        {
-                            path = ConfigurationManager.AppSettings["URL FireFox"];
-                            path = Environment.ExpandEnvironmentVariables(path);
-                            Console.WriteLine(path);
-                            driver = new FirefoxDriver(path);
-                            driver.Navigate().Refresh();
-                            break;
-                        }
-                        catch (Exception)
-                        {
-                            Console.WriteLine("BrowserFactory: An error occurred when try to load driver Firefox");
-                            throw;
-                        }
-
                     case "IE":
                         try
                         {

@@ -5,10 +5,6 @@
  ## Short Description
 This test case opens Google with a browser selected by the parameter. Search "seleniumhq" and click on the first result from the list.
 
- ## Pattern used
- ### Page Object Pattern
- ### Factory Pattern
-
  ## How can you run the test case?
 
  **Step 1: Source code**
@@ -24,10 +20,21 @@ Add to system environment var _PATH_ this: _C:\Program Files (x86)\NUnit.org\nun
  **Step 3: Run test**
 Open command line _cmd_, go to the current path where the _dll_ was been generated _(..\IntiveFDV-test\bin\Debug)_
 
-And type on a console the next command line.You can run the test case for Browser:IE/FireFox/Chrome browsers:
+And type on a console the next command line.
 $ nunit3-console.exe --params:Browser=IE IntiveFDV-test.dll
 
+You can run the test case for Browser:IE/Chrome if you change the params as Browser=Chrome. Also if you run command line without params the test case run for Chrome as default.
+
  ## Notes
-The test case run with Chrome Browser like default, if the parameter Browser is missing.
-Explorer need change some security permissions
-Platform is windows
+Selenium WebDriver
+Language C#
+Platform on Windows
+
+ ## Pattern used
+ I am using those patterns to abstract behaviour.
+ 
+ ### Page Object Pattern
+ This pattern is commonly used on test automation to split the functionality of the page with the test case steps. I used when I did the class _Google_ where put all functionality regarding thing to do on this page site.
+ 
+ ### Factory Pattern 
+ Also, I use this pattern, to create a different instance depending on the browser. I used on the class _BrowserFactory_ where I get the different instance according to the browser sent by the parameter
