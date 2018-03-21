@@ -9,11 +9,11 @@ This test case opens Google with a browser selected by the parameter. Search "se
  ### Page Object Pattern
  ### Factory Pattern
 
- ## How can run the test case?
+ ## How can you run the test case?
 
  **Step 1: Source code**
 Download the source on the desktop folder. From git repository: [Repository](https://github.com/ferchuochoa/intive-test.git)
-Download the repository on the User/UserName space.For more information you can see the app.config file inside the project.
+Download the repository on the _User/UserName_ space (your %USERPROFILE%). For more information you can see the _app.config_ file inside the project, there are where the driver is.
 
  **Step 2: Software needed**
 You need download nunit console, you can do it from here and install it:
@@ -22,7 +22,7 @@ You need download nunit console, you can do it from here and install it:
 Add to system environment var _PATH_ this: _C:\Program Files (x86)\NUnit.org\nunit-console_
 
  **Step 3: Run test**
-Open command line _cmd_, go to the current path where the _dll_ was been generated _(..test\IntiveFDV-test\IntiveFDV-test\bin\Debug)_
+Open command line _cmd_, go to the current path where the _dll_ was been generated _(..\IntiveFDV-test\bin\Debug)_
 
 And type on a console the next command line.You can run the test case for Browser:IE/FireFox/Chrome browsers:
 $ nunit3-console.exe --params:Browser=IE IntiveFDV-test.dll

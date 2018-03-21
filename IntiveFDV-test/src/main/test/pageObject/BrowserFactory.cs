@@ -14,9 +14,9 @@ namespace IntiveFDV_test.src.main.test.pageObject
         public static IWebDriver InitBrowser(string browserName)
         {
             string path = "";
-            try
-            {
-                switch (browserName)
+            Console.WriteLine("BrowserFactory: initializing the browser: "+browserName);
+
+            switch (browserName)
                 {
                     case "FireFox":
                         try
@@ -30,10 +30,9 @@ namespace IntiveFDV_test.src.main.test.pageObject
                         }
                         catch (Exception)
                         {
-
+                            Console.WriteLine("BrowserFactory: An error occurred when try to load driver Firefox");
                             throw;
                         }
-
 
                     case "IE":
                         try
@@ -46,11 +45,10 @@ namespace IntiveFDV_test.src.main.test.pageObject
                         }
                         catch (Exception)
                         {
-
+                            Console.WriteLine("BrowserFactory: An error occurred when try to load driver IE");
                             throw;
                         }
-
-
+                    
                     case "Chrome":
                         try
                         {
@@ -62,17 +60,11 @@ namespace IntiveFDV_test.src.main.test.pageObject
                         }
                         catch (Exception)
                         {
-
+                            Console.WriteLine("BrowserFactory: An error occurred when try to load driver Chrome");
                             throw;
                         }
 
                 }
-            }
-            catch (Exception e)
-            {
-
-                Console.WriteLine("An error occurred: '{0}'", e);
-            }
             
             return driver;
         }

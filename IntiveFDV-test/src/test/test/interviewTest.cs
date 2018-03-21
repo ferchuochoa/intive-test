@@ -11,16 +11,16 @@ namespace IntiveFDV_test
      public class InterviewTest
      {
         private IWebDriver driver;
-
+        private string browserName;
 
         [SetUp]
         public void SetUp()
         {
-            //run Chrome like default browser if the parameter is missing
-            var browser = NUnit.Framework.TestContext.Parameters.Get("Browser","Chrome");
-            this.driver = BrowserFactory.InitBrowser(browser);
+            //run Chrome as default browser if the parameter is missing
+            browserName = NUnit.Framework.TestContext.Parameters.Get("Browser","Chrome");
+            this.driver = BrowserFactory.InitBrowser(browserName);
             driver.Manage().Window.Maximize();
-            Console.WriteLine("the browser selected is: "+ browser);
+            Console.WriteLine("the browser selected is: "+ browserName);
         }
 
         [TearDown]
@@ -35,7 +35,7 @@ namespace IntiveFDV_test
         {
             Console.WriteLine("InterviewTest: Starting the Interview test case... ");
             Google google = new Google(driver);
-            google.search("Seleniumhq");
+            google.searchAndEnter("Seleniumhq", browserName);
             google.clickOnFirstContain("Seleniumhq");
 
             Console.WriteLine("InterviewTest: The test case was finished successfully.");

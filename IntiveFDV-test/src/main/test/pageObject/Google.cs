@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using System;
 using System.Threading;
 
@@ -14,25 +15,44 @@ namespace IntiveFDV_test.src.main.test.pageObject
             {
                 this.driver = driver;
                 driver.Navigate().GoToUrl("https://www.google.com");
-                Thread.Sleep(1000);
+                
             }
             catch (Exception e)
             {
-                Console.WriteLine("An error occurred: '{0}'", e);
+                Console.WriteLine("Google: An error occurred when try to load the driver: '{0}'", e);
+                throw;
             }
            
         }
-        public void search(string toSearch)
+        public void searchAndEnter(string toSearch, string browserName)
         {
             Console.WriteLine("Google: Starting to Search the value: "+toSearch+".");
             try
             {
-                driver.FindElement(By.Id("lst-ib")).SendKeys(toSearch);
-                driver.FindElement(By.Id("lst-ib")).SendKeys(Keys.Enter);
+                IWebElement input = driver.FindElement(By.Id("lst-ib"));
+                input.SendKeys(toSearch);
+
+                if (browserName.Equals("FireFox"))
+                {
+                    //In Firefox doen´t work the option Keys.Enter
+                    
+                    driver.FindElement(By.Name("btnK")).Click();
+                }
+                else
+                {
+                    input.SendKeys(Keys.Enter);
+                   
+                }
+                
+                
+                
+                
+
             }
             catch (Exception e)
             {
-                Console.WriteLine("An error occurred: '{0}'", e);
+                Console.WriteLine("Google: An error occurred when try to search "+toSearch+": '{0}'", e);
+                throw;
             }
         }
 
@@ -47,7 +67,8 @@ namespace IntiveFDV_test.src.main.test.pageObject
             }
             catch (Exception e)
             {
-                Console.WriteLine("An error occurred: '{0}'", e);
+                Console.WriteLine("Google: An error occurred when try to click on the first result with value "+value+": '{0}'", e);
+                throw;
             }
             
         }

@@ -29,3 +29,17 @@ C:\Users\ferchu\intive-test\test\IntiveFDV-test\IntiveFDV-test\obj\Debug\IntiveF
 C:\Users\ferchu\intive-test\test\IntiveFDV-test\IntiveFDV-test\obj\Debug\IntiveFDV-test.csproj.CopyComplete
 C:\Users\ferchu\intive-test\test\IntiveFDV-test\IntiveFDV-test\obj\Debug\IntiveFDV-test.dll
 C:\Users\ferchu\intive-test\test\IntiveFDV-test\IntiveFDV-test\obj\Debug\IntiveFDV-test.pdb
+C:\Users\fochoa\Desktop\intive-test\IntiveFDV-test\bin\Debug\IntiveFDV-test.dll.config
+C:\Users\fochoa\Desktop\intive-test\IntiveFDV-test\bin\Debug\IntiveFDV-test.dll
+C:\Users\fochoa\Desktop\intive-test\IntiveFDV-test\bin\Debug\IntiveFDV-test.pdb
+C:\Users\fochoa\Desktop\intive-test\IntiveFDV-test\bin\Debug\log4net.dll
+C:\Users\fochoa\Desktop\intive-test\IntiveFDV-test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\fochoa\Desktop\intive-test\IntiveFDV-test\bin\Debug\nunit.framework.dll
+C:\Users\fochoa\Desktop\intive-test\IntiveFDV-test\bin\Debug\WebDriver.dll
+C:\Users\fochoa\Desktop\intive-test\IntiveFDV-test\bin\Debug\log4net.xml
+C:\Users\fochoa\Desktop\intive-test\IntiveFDV-test\bin\Debug\nunit.framework.pdb
+C:\Users\fochoa\Desktop\intive-test\IntiveFDV-test\bin\Debug\nunit.framework.xml
+C:\Users\fochoa\Desktop\intive-test\IntiveFDV-test\bin\Debug\WebDriver.xml
+C:\Users\fochoa\Desktop\intive-test\IntiveFDV-test\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\fochoa\Desktop\intive-test\IntiveFDV-test\obj\Debug\IntiveFDV-test.dll
+C:\Users\fochoa\Desktop\intive-test\IntiveFDV-test\obj\Debug\IntiveFDV-test.pdb
