@@ -1,7 +1,6 @@
 ﻿using OpenQA.Selenium;
 using System;
 
-
 namespace IntiveFDV_test.src.main.test.pageObject
 {
     public class Google
@@ -30,8 +29,12 @@ namespace IntiveFDV_test.src.main.test.pageObject
             {
                 IWebElement input = driver.FindElement(By.Id("lst-ib"));
                 input.SendKeys(toSearch);
-                input.SendKeys(Keys.Enter);
-                   
+                //I should be using this sentence to press enter inside the search level:
+                //input.SendKeys(Keys.Enter);
+                //But on firefox platform doesn´t work. 
+                input.SendKeys(Keys.Tab);
+                driver.FindElement(By.Name("btnK")).Click();
+                
             }
             catch (Exception e)
             {
