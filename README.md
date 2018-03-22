@@ -26,8 +26,8 @@ $ nunit3-console.exe --params:Browser=IE IntiveFDV-test.dll
 You can run the test case for Browser:IE/Chrome/FireFox if you change the params as Browser=FireFox. Also if you run command line without params the test case run for Chrome as default.
 
  ## Notes
-Selenium WebDriver
-Language C#
+Selenium WebDriver;
+Language C#; IDE Visual Studio;
 Platform on Windows 10
 
  ## Pattern used
